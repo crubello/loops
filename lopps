@@ -1,0 +1,7 @@
+// Hottest Collection
+
+for(x=0;x<100000;x++) { db.listingsAndReviews_big_collection.find().limit(10).itcount() }
+
+// Operacion lenta
+
+for(x=0;x<2990;x++) { db.listingsAndReviews_big_collection.findOne({property_type : "Palace"}) }
